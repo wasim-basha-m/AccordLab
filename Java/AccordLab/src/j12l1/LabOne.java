@@ -13,6 +13,7 @@ public class LabOne {
 		int c=0;
 		for(int i=0;i<a;i++) {
 			c=sc.nextInt();
+			System.out.println(c);
 		}
 		
 		System.out.println(c);

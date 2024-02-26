@@ -4,24 +4,24 @@ import java.util.Scanner;
 
 public class LabOne {
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 
 		System.out.print("Enter the size of the array: ");
-		int size = scanner.nextInt();
+		int size = sc.nextInt();
 		int[] array = new int[size];
 		System.out.println("Enter the elements of the array:");
 		for (int i = 0; i < size; i++) {
 			System.out.print("Enter element at position " + i + ": ");
-			array[i] = scanner.nextInt();
+			array[i] = sc.nextInt();
 		}
 
 		try {
 
 			System.out.print("Enter the position of the dividend: ");
-			int dividendPosition = scanner.nextInt();
+			int dividendPosition = sc.nextInt();
 
 			System.out.print("Enter the position of the divisor: ");
-			int divisorPosition = scanner.nextInt();
+			int divisorPosition = sc.nextInt();
 			int dividend = array[dividendPosition];
 			int divisor = array[divisorPosition];
 			int quotient = dividend / divisor;
@@ -36,7 +36,6 @@ public class LabOne {
 		} catch (Exception e) {
 			System.out.println("An error occurred: " + e.getMessage());
 		} finally {
-			scanner.close();
 		}
 	}
 }

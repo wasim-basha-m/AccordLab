@@ -3,7 +3,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class j13l1 {
+public class LabOne {
 	public static void main(String[] args) {
 		String filePath = "D:\\Github Repo\\AccordLab\\Java\\AccordLab\\src\\j13l2\\Hello.txt";
 
